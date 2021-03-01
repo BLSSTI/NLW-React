@@ -24,7 +24,7 @@
   }
 }
 
-@media(max-width: 720){
+@media(max-width: 720px){
   html {
     font-size: 87.5%;
   }
@@ -36,7 +36,7 @@ body {
 }
 
 body, input, textarea, button{
-  font: 400 16px "Inter", sans-serif;
+  font: 400 1rem "Inter", sans-serif;
 }
 
 button{
@@ -51,7 +51,7 @@ a{
 
 .container {
   height: 100vh;
-  max-width: 992;
+  max-width: 992px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
 
