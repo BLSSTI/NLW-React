@@ -1,7 +1,13 @@
+import { useContext } from "react";
+import { ChallengesContext } from "../contexts/ChallengeContext";
 import styles from "../styles/components/ChallengeBox.module.css";
 
 export function ChallengeBox() {
   const hasActiveChallenge = true;
+
+  const {startNewChallenge} = useContext(ChallengesContext);
+  console.log(startNewChallenge);
+
 
   return (
     <div className={styles.challengeBoxContainer}>
@@ -12,7 +18,7 @@ export function ChallengeBox() {
         <main>
           <img src="icons/body.svg" />
           <strong>Novo desafio</strong>
-          <p> Levante e faça uma caminhada de 3 minutos</p>
+          <p> Levante e faça uma caminhada de 3 minutos </p>
         </main>
 
         <footer>
