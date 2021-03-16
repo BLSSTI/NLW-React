@@ -1,6 +1,7 @@
 import { createContext, useState, ReactNode, useEffect } from "react";
 import challenges from "../../challenges.json";
 import Cookies from 'js-cookie';
+import { LevelUpModal } from "../components/LevelUpModal";
 
 interface Challenge {
   type: "body" | "eye";
@@ -104,6 +105,7 @@ export function ChallengesProvider({
       }}
     >
       {children}
+      <LevelUpModal/>
     </ChallengesContext.Provider>
   );
 }
